@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Daniel Soria" />
+  <title>Agenda con la Psicóloga Diana López Cantú</title>
+  <meta name="description" content="Bienestar emocional con sesiones profesionales, atención presencial y online." />
+
+  <link rel="icon" href="Logo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <!-- Cabecera y navegación -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#tarifas">Tarifas</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><button id="boton-tema" class="modo-sat">🌗 Modo Oscuro</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero" data-anim data-anim-delay="1">
+      <div class="contenido-hero">
+        <h1>Bienestar emocional que transforma</h1>
+        <p>Agenda tu cita con la Psicóloga <strong>Diana Elizabeth López Cantú</strong></p>
+        <button class="boton-acento" onclick="document.getElementById('formulario-agenda').scrollIntoView({ behavior: 'smooth' })">
+          🗓️ Agenda tu cita
+        </button>
+      </div>
+      <div class="hero-img">
+        <img src="foto-novia.jpg" alt="Psicóloga Diana López Cantú" />
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="tarjeta" data-anim data-anim-delay="2">
+      <h2>🧠 Sobre mí</h2>
+      <p>Soy <strong>Diana Elizabeth López Cantú</strong>, psicóloga clínica especializada en acompañamiento emocional individual, familiar y en línea.</p>
+      <p>Ofrezco sesiones empáticas, libres de juicio, para ayudarte a conectar con tu bienestar.</p>
+      <p><strong>🎥 Sesión Online disponible</strong> &nbsp;&nbsp;&nbsp; <span style="color: green;">✅ Psicóloga verificada</span></p>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="tarjeta" data-anim data-anim-delay="3">
+      <div class="servicios-header">
+        <h2>🌿 Servicios Psicológicos</h2>
+        <div class="sello-certificacion">
+          <img src="sello.png" alt="Psicóloga verificada" />
+          <p>Cédula profesional: <strong>13891497</strong></p>
+        </div>
+      </div>
+      <ul>
+        <li>✔️ Sesión individual (adultos y adolescentes)</li>
+        <li>✔️ Manejo de ansiedad, estrés y autoestima</li>
+        <li>✔️ Sesión para parejas y familias</li>
+        <li>✔️ Atención psicológica para niños</li>
+      </ul>
+    </section>
+
+    <!-- Tarifas -->
+    <section id="tarifas" class="tarjeta" data-anim data-anim-delay="4">
+      <h2>💲 Tarifas por sesión</h2>
+      <ul>
+        <li>👶 Niños: <strong>$320 MXN</strong></li>
+        <li>🧑‍🎓 Adolescentes y Adultos: <strong>$380 MXN</strong></li>
+        <li>💑 Parejas: <strong>$450 MXN</strong></li>
+        <li>👨‍👩‍👧 Familias: <strong>$550 MXN</strong></li>
+      </ul>
+      <p style="margin-top: 10px;">🕒 <em>Horario sujeto a disponibilidad de lunes a sábados de 12:00 p.m. a 7:00 p.m.</em></p>
+    </section>
+
+    <!-- Ubicación -->
+    <section id="ubicacion" class="tarjeta mapa-ubicacion" data-anim data-anim-delay="5">
+      <h2>📍 Ubicación del consultorio</h2>
+      <p><strong>Dirección:</strong> Pintores #102, Col. Himno Nacional 1era Sección, San Luis Potosí, S.L.P.</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.220204003402!2d-101.0045!3d22.1531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a58349e43a347%3A0x9aa738b2f057de52!2sPintores%20102%2C%20Himno%20Nacional%201era%20Secci%C3%B3n%2C%20San%20Luis%20Potos%C3%AD%2C%20SLP!5e0!3m2!1ses-419!2smx!4v1720911110000!5m2!1ses-419!2smx"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+      <div style="text-align: center; margin-top: 10px;">
+        <a href="https://www.google.com/maps?q=Pintores+102,+Himno+Nacional+1era+Sección,+San+Luis+Potosí,+SLP" target="_blank">
+          <button class="boton-acento">📌 Abrir en Google Maps</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Formulario -->
+    <section id="contacto" class="tarjeta" data-anim data-anim-delay="6">
+      <h2>📝 Agenda una cita</h2>
+      <p>Solicita tu horario preferido y modalidad. Diana confirmará tu cita por correo o WhatsApp.</p>
+
+      <form id="formulario-agenda">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="Nombre" required />
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="Correo" required />
+
+        <label for="dia">Día preferido:</label>
+        <input type="date" id="dia" name="Día" required />
+
+        <label for="horario">Horario preferido:</label>
+        <select id="horario" name="Horario" required>
+          <option value="">Selecciona un horario</option>
+          <option>12:00 p.m.</option><option>12:30 p.m.</option>
+          <option>1:00 p.m.</option><option>1:30 p.m.</option>
+          <option>2:00 p.m.</option><option>2:30 p.m.</option>
+          <option>3:00 p.m.</option><option>3:30 p.m.</option>
+          <option>4:00 p.m.</option><option>4:30 p.m.</option>
+          <option>5:00 p.m.</option><option>5:30 p.m.</option>
+          <option>6:00 p.m.</option><option>6:30 p.m.</option>
+          <option>7:00 p.m.</option>
+        </select>
+
+        <fieldset style="margin-top: 20px;">
+          <legend>¿Cómo prefieres la Sesión?</legend>
+          <label for="video" style="display: flex; align-items: center; gap: 10px;">
+            <input type="radio" id="video" name="Modalidad" value="Videollamada" required />
+            Videollamada
+          </label>
+          <label for="presencial" style="display: flex; align-items: center; gap: 10px;">
+            <input type="radio" id="presencial" name="Modalidad" value="Presencial" />
+            Presencial
+          </label>
+        </fieldset>
+
+        <label for="comentario">Comentario adicional:</label>
+        <textarea id="comentario" name="Comentario" rows="3"></textarea>
+
+        <button type="submit">📨 Enviar correo</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/524443183642" class="whatsapp-float" target="_blank" aria-label="Chatear por WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" class="whatsapp-icon" />
+  </a>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; <span id="anio-actual"></span> Lic. Diana Elizabeth López Cantú</p>
+    <p>Sitio desarrollado por <strong>Daniel Soria</strong> HTML</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // 🗓️ Año en el footer
+    document.getElementById("anio-actual").textContent = new Date().getFullYear();
+
+    // 🌙 Activar modo oscuro automático y restaurar preferencia
+    window.addEventListener("load", () => {
+      const hora = new Date().getHours();
+      if ((hora >= 19 || hora < 7) && !localStorage.getItem("modoOscuro")) {
+        document.body.classList.add("modo-oscuro");
+        localStorage.setItem("modoOscuro", "true");
+        actualizarTextoBotones();
+      }
+
+      if (localStorage.getItem("modoOscuro") === "true") {
+        document.body.classList.add("modo-oscuro");
+        actualizarTextoBotones();
+      }
+
+      // 🎬 Activar animaciones por scroll
+      const elementosAnimados = document.querySelectorAll('[data-anim]');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add("visible");
+        });
+      });
+      elementosAnimados.forEach(el => observer.observe(el));
+    });
+
+    // 🌗 Alternar modo claro/oscuro con transición
+    function toggleModoOscuro() {
+      document.body.classList.add("transicion-tema");
+      const activar = !document.body.classList.contains("modo-oscuro");
+      document.body.classList.toggle("modo-oscuro", activar);
+      localStorage.setItem("modoOscuro", activar ? "true" : "false");
+      actualizarTextoBotones();
+      setTimeout(() => {
+        document.body.classList.remove("transicion-tema");
+      }, 500);
+    }
+
+    // 🔁 Actualizar texto del botón SAT
+    function actualizarTextoBotones() {
+      const oscuroActivo = document.body.classList.contains("modo-oscuro");
+      const texto = oscuroActivo ? "☀️ Modo Claro" : "🌗 Modo Oscuro";
+      const boton = document.getElementById("boton-tema");
+      if (boton) boton.textContent = texto;
+    }
+
+    // 💡 Enlazar botón SAT
+    document.getElementById("boton-tema")?.addEventListener("click", toggleModoOscuro);
+
+    // 📬 Capturar formulario y generar borrador de correo
+    document.getElementById("formulario-agenda").addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const nombre = document.getElementById("nombre").value.trim();
+      const correo = document.getElementById("correo").value.trim();
+      const dia = document.getElementById("dia").value;
+      const horario = document.getElementById("horario").value;
+      const modalidad = document.querySelector('input[name="Modalidad"]:checked')?.value || "";
+      const comentario = document.getElementById("comentario").value.trim();
+
+      let body = `Nombre completo: ${nombre}\nCorreo electrónico: ${correo}\nDía preferido: ${dia}\nHorario preferido: ${horario}\n¿Cómo prefieres la sesión?: ${modalidad}\nComentario adicional: ${comentario}`;
+
+      const mailto = `mailto:dlopezcan16@gmail.com?subject=Solicitud%20de%20cita&body=${encodeURIComponent(body)}`;
+
+      window.open(mailto, "_blank");
+    });
+
+    // 🎉 Cerrar modal de confirmación (por si lo activas manualmente)
+    function cerrarModal() {
+      const modal = document.getElementById("modal-confirmacion");
+      if (modal) modal.style.display = "none";
+    }
+  </script>
+</body>
+</html>
